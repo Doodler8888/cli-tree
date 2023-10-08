@@ -6,6 +6,7 @@ import (
 	"github.com/Doodler8888/cli-tree/pkg/docker"
 	"github.com/Doodler8888/cli-tree/pkg/tmux"
 	"github.com/Doodler8888/cli-tree/pkg/gocli"
+	"github.com/Doodler8888/cli-tree/pkg/zellij"
 	Z "github.com/rwxrob/bonzai/z"
 	// "github.com/rwxrob/help"
 )
@@ -17,6 +18,7 @@ func main() {
 			docker.NewCmd(),
 			tmux.NewCmd(),
 			gocli.NewCmd(),
+			zellij.NewCmd(),
 		},
 	}
 
