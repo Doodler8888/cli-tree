@@ -1,4 +1,4 @@
-package gocli
+package tar
 
 
 import (
@@ -8,10 +8,10 @@ import (
 
 func NewCmd() *Z.Cmd {
 	return &Z.Cmd{
-		Name: "go",
+		Name: "tar",
 		Commands: []*Z.Cmd{
 			help.Cmd,
-			goInstall,
+			_extract,
 		},
 	}
 }
